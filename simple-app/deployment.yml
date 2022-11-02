@@ -12,6 +12,7 @@ spec:
     metadata:
       labels:
         app: trivial-go-web-app
+        env: envok
     spec:
       containers:
       - name: webserver-simple
