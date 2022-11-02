@@ -12,10 +12,11 @@ spec:
     metadata:
       labels:
         app: trivial-go-web-app
-        env: envok
+        env: notok
+        onemore: label
     spec:
       containers:
       - name: webserver-simple
-        image: docker.io/kostiscodefresh/gitops-simple-app:v1.0
+        image: docker.io/kostiscodefresh/gitops-simple-app:v2.0
         ports:
         - containerPort: 8080
